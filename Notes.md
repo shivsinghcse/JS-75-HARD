@@ -1,0 +1,79 @@
+# Day-01
+
+## What is JavaScript?
+JavaScript (JS) is a programming language that makes web pages interactive. It can:
+- Change website content dynamically.
+- Respond to user actions like clicks and keyboard input.
+- Communicate with servers to fetch or send data.
+
+> In simple words, HTML is the structure, CSS is the design, and JavaScript is the brain of a
+webpage
+
+
+---
+## Why do we use JavaScript?
+
+## Use case of JavaScript:
+JavaScript is used to make websites interactive, automate tasks, and build applications. Here are
+some key reasons:
+
+1. **Adds Interactivity** - Makes websites dynamic (e.g., sliders, pop-ups, animations).
+2. **Handles User Input** - Validates forms, handles button clicks, etc.
+3. **Fetches Data** - Loads new content without reloading the page (e.g., social media feeds).
+4. **Game Development** - Used to create web-based games.
+5. **Backend Development** - JavaScript (via Node.js) can run on servers too.
+6. **Mobile and Desktop Apps** - Frameworks like React Native and Electron allow building mobile and
+desktop apps.
+
+---
+## Use Cases of JavaScript:
+
+- **Form Validation** -
+Checking if an email is entered correctly before submitting a form.
+- **Animation** -
+Creating smooth effects like fading in/out or moving elements.
+
+- **Real-Time Updates** -
+Chat applications (e.g., WhatsApp Web)
+
+- **Fetching Data** -
+Loading news articles without reloading the page.
+
+- **Games** -
+Browser games like 2048 or Flappy Bird.
+
+- **E-commerce Features** - 
+Adding/removing products in a shopping cart dynamically.
+---
+
+
+# DAy-03
+<!-- 
+js is a client side programming language.
+statement/instruction
+output stmt in js:
+    window.alert()
+    console.log()
+    document.write()
+    .innerHTML
+
+data - number, string, character   
+
+compiler - compile | interpretor - iterpret
+
+keywords in js
+variable - to store data in ram
+= assignment operator
+
+x = 5; // why not error ???
+        console.log(x);
+
+        var x = 10; // var is specifier
+        console.log(x); 
+-->
+
+
+# Day-52 : School management app (Setup)
+- Tailwind CSS cdn
+- Remix icon
+- Animate.css
