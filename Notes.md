@@ -73,6 +73,26 @@ x = 5; // why not error ???
 -->
 
 
+# Day-04
+<!-- 
+why alert() shows first
+Data - 
+    number - 0-9
+    character - 'a', '@', '#'
+    string - apple, code, jsvascript
+
+variable - to store data in ram temporaryly  
+variable stores reference of the data , is a way to store data in ram   
+
+keyword /  reserved word
+there are some predefine words in language which compiler/interprator already knows called keyword
+
+list of keyword in js
+-->
+
+# Day-05
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
