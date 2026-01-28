@@ -113,7 +113,24 @@ console.error()
 -->
 
 # Day-06
+<!-- 
+function - is a way to block our code
+function declartion/defination
+function call
 
+function type:
+    1. built-in function or pre-defined function
+        ex- window.alert(), window.print(), console.log(), document.write()
+    2. user defined function
+
+variable and function name mustbe descriptive
+in js follow camelCase convention
+lowercase, UPPERCASE, SnakeCase, camelCase
+space not allowed in variable and function name   
+js is case-sensitive language 
+-->
+
+# Day-07
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
