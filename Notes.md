@@ -91,6 +91,28 @@ list of keyword in js
 -->
 
 # Day-05
+<!-- 
+not defined - Reference error
+DRY - do not repeat yourself
+variable helps in memory effency
+variable declaration, initialization
+no initialization no memory in ram
+, operator in console.log()
+every stmt ends with ; but optional in js
+/*
+multi line
+comment
+*/
+
+// single line comment
+
+compiler and interpretor ignores comments
+console.warn()
+console.error()
+
+-->
+
+# Day-06
 
 
 # Day-52 : School management app (Setup)
