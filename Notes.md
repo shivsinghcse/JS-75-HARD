@@ -152,6 +152,25 @@ in tag we write event as an attribute
 -->
 
 # Day-08
+<!-- 
+events:
+    onmousedown
+    onmouseover
+    onmouseout
+
+Scope:
+    Global scope | Global variable - outside function
+    Local scope | Local variable    - inside function
+
+parameter - variable in function declaration
+argument - actual data during function call 
+call by value   
+if not pass argument undefined
+default parameter - assign default value in function declaration
+-->
+
+# Day-09
+
 
 
 
