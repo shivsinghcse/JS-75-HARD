@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(x=0, y=0){
+            alert(x+y);
+        }
+
+        const demo = () => {
+            console.log("Arrow function");
+        }
+
+        demo();
+
+        var x = 12;
+        x = 8;
+        x = 10;
+        console.log(x);
+
+        const a = 5;
+        console.log(a);
+
+        const test = (elem) => {
+            console.log(elem);
+            console.log(elem.innerText);
+            // console.log(elem.name);
+            // console.log(elem.getAttribute("name"));
+        }
+
+        const result = (input) => {
+            console.log(input);
+            console.log(input.type);
+            console.log(input.onfocus);
+            console.log(input.value);
+            console.log(input.placeholder);
+            console.log(input.xyz);
+            console.log(input.getAttribute("xyz"));
+            input.id = "user-name";
+            input.abc = "asa"
+            input.setAttribute("asa", "aaaa")
+
+        }
+    </script>
+</head>
+<body>
+    <h1>CodingOtt</h1>
+    <button onclick="sum(5, 9)">Sum</button>
+    <button onclick="demo()">Arrow Function</button>
+
+    <button onclick="test(this)" name="test-button">Test</button>
+    <h1 onclick="test(this)">Had</h1>
+    <p onclick="test(this)">Paragrapg</p>
+
+    <input type="text" onfocus="result(this)" value="full name" placeholder="Enter you full name" xyz="asdf">
+</body>
+</html>
+

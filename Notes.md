@@ -171,6 +171,24 @@ default parameter - assign default value in function declaration
 
 # Day-09
 
+<!--
+const - can not update, initialize at the time of declaration
+
+arrow function - comes in ES6
+if you pass this as an argument it give the current element in function parameter
+.innerHTML, innerText, textContent property
+function and method same
+
+accessing attribute value
+    console.log(elem.name); - this will give undefined in case of custom attributes only works for default html attributes
+    console.log(elem.getAttribute("name"));
+
+
+    same with setAttribute
+-->
+
+# Day-10
+
 
 
 
