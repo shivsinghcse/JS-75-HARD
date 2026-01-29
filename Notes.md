@@ -189,6 +189,12 @@ accessing attribute value
 
 # Day-10
 
+target <=> name
+return -> terminate the function execution
+
+# Day-11
+
+
 
 
 
