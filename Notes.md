@@ -193,6 +193,37 @@ target <=> name
 return -> terminate the function execution
 
 # Day-11
+<!-- 
+DOM - 
+    Document - webpage
+    Object - js object
+    Model - Map
+    map of webpage in object format
+    js process it in tree format
+
+to control dom we have some functions
+DOM is a programming interface
+html document ko jab js tree format me process krta hai aur use modify krne k liye function provide krta hai.
+
+DOM is an API which helps to manipulate pages content.
+
+
+document.title - changes page title
+Selectors:
+    document.getElementById("id") -> return an element / null
+    .getElementsByTagName("tagname") -> returns HTMLCollection
+Property:
+    .innerHTML - read and update text or html child
+    .innerText
+    .textContent
+    .style - to change/apply style/css
+    .backgroundColor
+    .color
+    .padding etc
+
+-->
+
+# Day-12
 
 
 
