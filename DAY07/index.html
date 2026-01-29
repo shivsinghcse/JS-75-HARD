@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function demo(){
+            var x = 6;
+            console.log(x);
+        }
+
+        function leftClick(){
+            window.alert("Clicked")
+        }
+
+        function fun(){
+            console.log("changed");
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="demo()">Codingott</h1>
+    <h1 onclick="leftClick()">Click</h1>
+    <h1 ondblclick="leftClick()">Double Click</h1>
+    <h1 oncontextmenu="leftClick()">Right Click</h1>
+
+    <input type="text" onkeypress="leftClick()">
+    <input type="text" onchange="fun()">
+    <input type="text" oninput="fun()">
+    <input type="text" onfocus="fun()">
+    <input type="text" onfocusout="fun()">
+</body>
+</html>
+

@@ -131,6 +131,29 @@ js is case-sensitive language
 -->
 
 # Day-07
+<!-- 
+keywords:
+    var, function,
+
+event - perform any action from mouse or keyboard ex- mouse click, keypress,  
+event ex-
+    onclick - mouse left button
+    ondblclick - double click on mouse left button
+    oncontextmenu - mouse right button
+    keydown
+    keyup
+    keypress
+    onchange
+    oninput
+    onfocus
+    onfocusout
+    onload
+in tag we write event as an attribute
+-->
+
+# Day-08
+
+
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
