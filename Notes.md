@@ -224,6 +224,16 @@ Property:
 -->
 
 # Day-12
+<!-- 
+document - body tag
+Selectors:
+    getElementById()
+property:
+    .innerHTML
+    .style
+-->
+
+# Day-13
 
 
 

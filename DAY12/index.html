@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+    <title>Document</title>
+    <script>
+        const tryme = (button) => {
+            // code for h1 tag
+            const title = document.getElementById("title");
+            console.log(title);
+            title.innerHTML = "The Code School";
+            title.style.color = "dodgerblue";
+
+            // code for p tag
+
+            const desc = document.getElementById("desc");
+            desc.style.fontFamily = "System-ui"
+            desc.style.color = "red";
+
+            // code for button
+            button.style.backgroundColor = "dodgerblue";
+            button.style.color = "white";
+            button.style.padding = "1rem 1.5rem";
+            button.style.borderRadius = "0.4rem";
+            button.style.border = "none";
+            button.style.fontSize = "1.3rem";
+
+        }
+    </script>
+</head>
+<body>
+    <h1 id="title">CodingOtt</h1>
+    <p id="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum doloribus voluptatibus quaerat corrupti ad quasi, veritatis recusandae accusantium quis est?</p>
+
+    <button onclick="tryme(this)">test</button>
+</body>
+</html>
+
