@@ -258,8 +258,31 @@ onchange - file select color select
 box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 width: fit-content
 
+# Day-15
+clamp() in css
+in form input always add name attribute
+can access form value using getElementById
+can access form value event.target[0].value
+const login = (e) => {
+            e.preventDefault();
+            const username = e.target[0].value;
+            const password = e.target[1].value;
 
+            console.log(username, password);
+        }
 
+taget will give form element as a HTMLCollection
+can use this in case of form also       
+
+e.target.elements.username(value of name attribute)
+console.log(e.target.elements.username);
+elements gives a HTMLCollection which has all form element with indexing and also all element which has name attribute and length property which has value as total form element.
+
+flex-grow: 1 takes all remaining space
+
+createElement()
+setAttribute()
+click()
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const login = (e) => {
+            e.preventDefault();
+            const username = e.target[0].value;
+            const password = e.target[1].value;
+            console.log(e.target.elements);
+            console.log(username, password);
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="login(event)">
+        <input type="text" name="username" placeholder="Username" />
+
+        <input type="password" name="password" placeholder="Password" />
+
+        <button>Login</button>
+    </form>
+</body>
+</html>
