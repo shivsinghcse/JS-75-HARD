@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const getValue = (e) => {
+            e.preventDefault();
+            console.log(e);
+            console.log(e.target);
+            console.log(e.target[0]);
+            console.log(e.target[0].value);
+            console.log(e.target[1].value);
+            console.log(e.target[2].value);
+            console.log(e.target[3].value);
+        }
+
+        const formValue = () => {
+            const username = document.getElementById("username").value.trim()
+            const email = document.getElementById("email").value.trim()
+            const password = document.getElementById("password").value.trim()
+            const mobile = document.getElementById("mobile").value.trim()
+
+            console.log(username, email, password, mobile);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>CodingOtt Form</h1>
+    <form onsubmit="getValue(event)">
+        <input type="text" placeholder="Enter your name" name="username" id="username">
+        <input type="email" placeholder="Enter your email" name="email" id="email">
+        <input type="password" placeholder="Enter your password" name="password" id="password">
+        <input type="number" placeholder="Enter your mobile number" name="mobile" id="mobile">
+        <button>Submit</button>
+        
+    </form>
+</body>
+</html>
+

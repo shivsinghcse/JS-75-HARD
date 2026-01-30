@@ -234,11 +234,29 @@ property:
 -->
 
 # Day-13
- const changeStyle = (property, value) => {
-            const resultEle = document.getElementById("result");
-            resultEle.style[property] = value;
-        }
 
+const changeStyle = (property, value) => {
+const resultEle = document.getElementById("result");
+resultEle.style[property] = value;
+}
+
+# Day-14
+button - default value of type attribute : submit
+type="button" it will not submit form 
+type="reset" clear form data
+<button type="button">Submit</button>
+<input type="reset" value="clear">
+name attribute is must
+onsubmit event in form
+if you are reading form data so you have to prevent page reload on form submit for that we pass event keyword which send onsubmit event and then use event.preventDefault() 
+
+event.taget - gives the form
+
+onsubmit event used in form
+onchange - file select color select
+
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+width: fit-content
 
 
 
