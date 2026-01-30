@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const changeBackgroundColor = () => {
+            const resultEle = document.getElementById("result");
+            resultEle.style.backgroundColor = "dodgerblue";
+        }
+
+        const addBorder = () => {
+           const resultEle = document.getElementById("result");
+           resultEle.style.border = "3px solid red";
+        }
+
+        const changeBorderRadius = () => {
+            const resultEle = document.getElementById("result");
+            resultEle.style.borderRadius = "50%";
+        }
+
+        const changeStyle = (property, value) => {
+            const resultEle = document.getElementById("result");
+            resultEle.style[property] = value;
+        }
+    </script>
+    <style>
+        body{
+            background-color: #ddd;
+        }
+        #result{
+            width: 300px;
+            height: 300px;
+            background-color: #fff;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="result"></div>
+        <button onclick="changeStyle('backgroundColor', 'red')">Add background color</button>
+        <button onclick="changeStyle('border', '3px solid #000')">Add Border</button>
+        <button onclick="changeStyle('borderRadius', '50%')">Add Radius</button>
+    </div>
+</body>
+</html>

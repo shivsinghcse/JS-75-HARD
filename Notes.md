@@ -234,7 +234,10 @@ property:
 -->
 
 # Day-13
-
+ const changeStyle = (property, value) => {
+            const resultEle = document.getElementById("result");
+            resultEle.style[property] = value;
+        }
 
 
 
