@@ -293,6 +293,8 @@ click()
 
 # Day-17
 
+event:
+    - onanimationend - apply in animated element, when animation end it will executes
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
