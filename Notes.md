@@ -351,10 +351,36 @@ for(var {name, class:cls, roll, subject} of students){
 
 
 # Day-22
+operator -mathmetical symbols that performs some action between operands.
+operands - 
 
++, -, * , /, %, >, <
 
+comparision operator:
+> , <, ==, >=, <=, !=
+
+if() {
+
+}else{
+
+}
+
+1 space takes 1byte memory 
+
+new Date() - for date it gives current date and time in IST (India Standard Time)
+
+const date = new Date();
+console.log(date);
+const hour = date.getHours();
+console.log(hour);
+const day = date.getDay();
+console.log(day); // sunday: 0   saturday: 6
+
+# Day-23
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
 - Animate.css
+
+Day-21 form adder student
