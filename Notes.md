@@ -377,6 +377,7 @@ const day = date.getDay();
 console.log(day); // sunday: 0   saturday: 6
 
 # Day-23
+# Day-24
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
