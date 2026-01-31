@@ -313,6 +313,12 @@ array function -
     // updating array
     users[1] = "Atul";
     push() - add element end of array and return new updated length
+
+# Day-19
+for..of  loop
+for(var user of users){
+    console.log(user)
+}    
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
