@@ -283,6 +283,16 @@ flex-grow: 1 takes all remaining space
 createElement()
 setAttribute()
 click()
+
+# Day-16
+- External js file
+- folder structure - a folder for js and another for css
+- element.className = "fff"
+- element.classList.add()
+- element.classList.remove()
+
+# Day-17
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
