@@ -125,7 +125,7 @@ function type:
 
 variable and function name mustbe descriptive
 in js follow camelCase convention
-lowercase, UPPERCASE, SnakeCase, camelCase
+lowercase, UPPERCASE, Snake_Case (abc_cds), camelCase, PascalCase
 space not allowed in variable and function name   
 js is case-sensitive language 
 -->
@@ -319,6 +319,24 @@ for..of  loop
 for(var user of users){
     console.log(user)
 }    
+
+# Day-20
+object property name can not have - or space
+for..of loop doesn't work on objects TypeError: admission is not iterable
+
+so we use for in loop
+for(var info in admission){
+    console.log(info);
+    console.log(admission[info]);
+}
+so here info will give all keys and with the help of keys we can access  values.
+
+when we get key from variable to access that we use [] not . operator
+
+if property doesnot exist it will give undefined
+
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
