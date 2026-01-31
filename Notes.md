@@ -335,6 +335,23 @@ when we get key from variable to access that we use [] not . operator
 
 if property doesnot exist it will give undefined
 
+# Day-21
+
+
+object destructuring:
+
+for(var student of students){
+    const {name, class:cls, roll, subject} = student;
+    console.log(name, cls, roll, subject);
+}
+
+for(var {name, class:cls, roll, subject} of students){
+    console.log(name, cls, roll, subject);
+}
+
+
+# Day-22
+
 
 
 # Day-52 : School management app (Setup)
