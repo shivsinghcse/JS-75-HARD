@@ -295,6 +295,24 @@ click()
 
 event:
     - onanimationend - apply in animated element, when animation end it will executes
+
+# Day - 18    
+Data Structure : way of grouping and managing data for better logic and performance.
+need of dta structure: to handle data systematically, especially in real-word apps with large or complex dataset.
+Array - an ordered collection of data , indexing starts from 0
+Object
+
+JS is dynamically typed no need to declare datatype, types are determined at run time.
+
+console.log(users[5]) // undefinde
+
+to find total element of array - .length property
+
+array function - 
+    pop() - removes and return last elements
+    // updating array
+    users[1] = "Atul";
+    push() - add element end of array and return new updated length
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
