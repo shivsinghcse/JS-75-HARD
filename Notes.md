@@ -689,8 +689,55 @@ location.replace("/login");
 ---
 
 
+# Day-27
 
+CDN
 
+1. Background color
+    bg-color_name-varient (no varient in black and white)
+
+2. Text color
+    text-color_name-varient (no varient in black and white)  
+
+3. width
+    w-px    
+    w-full => 100%
+    w-6/12 => 50%
+    w-fit => fit-content
+    w-[120px] => custom
+        px-1px
+        1- 4px
+        2- 8px
+        3- 12px
+        .
+        .
+        .
+        96- 384px
+
+4. height
+    h-
+
+        h-full => 100% -> depends containers height / or content or position absolute and relative
+        h-screen => 100vh
+        px => 1px
+        1 => 4px
+        2 => 8px
+        3 => 12px
+        .
+        .
+        .
+        96 => 384px
+
+5. text-align
+    text-left
+    text-right
+    text-center
+    text-justify
+
+6. font-weight
+    font-medium
+    font-semibold
+    font-bold
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
