@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <div id="page" >
+        <form onsubmit="loginValidation(event)" class="animate__animated animate__pulse">
+            <h1 id="title">Sign in</h1>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <input type="password" name="password" id="password" placeholder="Password" required/>
+            <button>Login</button>
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>
