@@ -738,9 +738,98 @@ CDN
     font-medium
     font-semibold
     font-bold
+
+
+# Day-28
+
+1. background-color: bg-
+2. text-color: text-
+3. font-size: text-
+    text-xs (12px)
+    text-sm (14px)
+    text-base (18px)
+    text-lg
+    text-xl
+    text- 2xl
+    text- 3xl
+    text- 4xl .... 9xl
+    text-[120px]
+4. border: border
+
+    border: 1px
+    border - all side border
+    border-2 (border width)
+    border-green-600 (border color)
+    border-t border-t-2
+    border-b border-b-2
+    border-r border-r-2
+    border-l border-l-2
+5. display
+6. grid
+7. padding
+    p-px (1px)
+    p-1 (4px)
+    p-2 (8px)
+    p-3 (12px) .... p-96
+    p-[23px]
+
+    pt - padding top
+    pb - padding bottom
+    pr - padding right
+    pl - padding left
+
+    px - horizontal padding
+    py - vertical padding
+8. margin
+    m-px (1px)
+    m-1 (4px)
+    m-2 (8px)
+    m-3 (12px) .... p-96
+    m-[23px]
+
+    mt - margin top
+    mb - margin bottom
+    mr - margin right
+    ml - margin left
+
+    mx - horizontal margin
+    my - vertical margin
+
+9. border-radius
+    rounded
+    rounded-xs
+    rounded-sm
+    rounded-md
+    rounded-lg
+    rounded-xl
+    rounded-2xl
+    rounded-3xl
+    rounded-4xl
+    rounded-full
+
+10. shadow
+    shadow
+    shadow-lg
+    shadow-xl
+11. hover effect
+    hover:classname
+
+12. flex
+        flex
+        justify-center
+        items-center
+
+13. grid
+    grid
+    grid-cols-4(max 12 cols)
+    gap-16
+            
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
 - Animate.css
 
 Day-21 form adder student
+day-24 kids app
+day-28 practice tailwind
