@@ -378,6 +378,318 @@ console.log(day); // sunday: 0   saturday: 6
 
 # Day-23
 # Day-24
+# Day-25
+# Day-26
+location.href
+parentElement
+donot use keyword as function or variable name
+close()
+
+
+Here you go 👍
+Clean, **interview-ready notes** on **JavaScript `location` object** in **Markdown (.md) format**.
+
+---
+
+````md
+# JavaScript `location` Object – Complete Notes
+
+## 1. What is `location` in JavaScript?
+`location` is a **built-in browser object** that provides information about the **current URL** and allows **navigation / redirection**.
+
+It is part of:
+- `window.location`
+- `document.location` (alias)
+
+```js
+console.log(window.location === document.location); // true
+````
+
+---
+
+## 2. Example URL (Reference)
+
+```
+https://www.example.com:8080/path/page.html?name=shiv&id=10#top
+```
+
+---
+
+## 3. `location` Properties
+
+### 3.1 `location.href`
+
+➡️ Returns the **entire URL**
+
+```js
+location.href;
+```
+
+Output:
+
+```
+https://www.example.com:8080/path/page.html?name=shiv&id=10#top
+```
+
+---
+
+### 3.2 `location.protocol`
+
+➡️ Returns the protocol
+
+```js
+location.protocol;
+```
+
+Output:
+
+```
+https:
+```
+
+---
+
+### 3.3 `location.host`
+
+➡️ Hostname + Port
+
+```js
+location.host;
+```
+
+Output:
+
+```
+www.example.com:8080
+```
+
+---
+
+### 3.4 `location.hostname`
+
+➡️ Hostname only
+
+```js
+location.hostname;
+```
+
+Output:
+
+```
+www.example.com
+```
+
+---
+
+### 3.5 `location.port`
+
+➡️ Port number
+
+```js
+location.port;
+```
+
+Output:
+
+```
+8080
+```
+
+---
+
+### 3.6 `location.pathname`
+
+➡️ Path of URL
+
+```js
+location.pathname;
+```
+
+Output:
+
+```
+/path/page.html
+```
+
+---
+
+### 3.7 `location.search`
+
+➡️ Query string
+
+```js
+location.search;
+```
+
+Output:
+
+```
+?name=shiv&id=10
+```
+
+---
+
+### 3.8 `location.hash`
+
+➡️ Hash / Anchor
+
+```js
+location.hash;
+```
+
+Output:
+
+```
+#top
+```
+
+---
+
+### 3.9 `location.origin`
+
+➡️ Protocol + Host
+
+```js
+location.origin;
+```
+
+Output:
+
+```
+https://www.example.com:8080
+```
+
+---
+
+## 4. Location Methods
+
+### 4.1 `location.assign(url)`
+
+➡️ Redirects to a new URL
+➡️ **Back button works**
+
+```js
+location.assign("https://google.com");
+```
+
+---
+
+### 4.2 `location.replace(url)`
+
+➡️ Redirects to a new URL
+➡️ **Back button does NOT work**
+
+```js
+location.replace("https://google.com");
+```
+
+---
+
+### 4.3 `location.reload()`
+
+➡️ Reloads the current page
+
+```js
+location.reload();
+```
+
+Force reload (ignore cache):
+
+```js
+location.reload(true);
+```
+
+---
+
+## 5. Read-only vs Writable
+
+### ❌ Read-only properties
+
+```js
+location.protocol = "http"; // Not allowed
+```
+
+### ✅ Allowed (navigation)
+
+```js
+location.href = "https://example.com";
+```
+
+---
+
+## 6. `assign()` vs `replace()` (Interview Favorite)
+
+| Feature       | assign() | replace()      |
+| ------------- | -------- | -------------- |
+| Navigation    | Yes      | Yes            |
+| Back button   | ✅ Works  | ❌ Doesn't work |
+| History entry | Added    | Replaced       |
+
+---
+
+## 7. Real-World Use Cases
+
+### 7.1 Force HTTPS
+
+```js
+if (location.protocol !== "https:") {
+  location.replace("https://" + location.host + location.pathname);
+}
+```
+
+---
+
+### 7.2 Get Query Params
+
+```js
+const params = new URLSearchParams(location.search);
+console.log(params.get("name")); // shiv
+```
+
+---
+
+### 7.3 Logout Redirect
+
+```js
+localStorage.clear();
+location.replace("/login");
+```
+
+---
+
+## 8. `window.location` vs `document.location`
+
+* Both point to the **same object**
+* `window.location` is preferred
+
+---
+
+## 9. Common Interview Questions
+
+### Q1. Is `location` part of JavaScript or Browser?
+
+➡️ Browser (Web API), not core JS
+
+### Q2. Can we change URL without reload?
+
+➡️ ❌ Not with `location`
+➡️ ✅ Use `history.pushState()`
+
+### Q3. Is `location` mutable?
+
+➡️ Properties: ❌ No
+➡️ Navigation: ✅ Yes
+
+---
+
+## 10. One-Line Summary
+
+> `location` is used to **read URL details** and **navigate between pages** in the browser.
+
+---
+
+
+
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn

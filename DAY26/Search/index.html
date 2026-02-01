@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const search = (e) => {
+            e.preventDefault();
+            const keyword = e.target.elements.searchText.value;
+            // console.log(keyword);
+            location.href = `https://www.google.com/search?q=${keyword}&sca_esv=e66faec5c53a1106&sxsrf=ANbL-n6tBM8mD8dNXXKvjSGoy-EBXbd0Sw:1769969426208&source=hp&biw=1920&bih=945&ei=Epd_aa7WCv-hseMP7c7x2Qk&iflsig=AFdpzrgAAAAAaX-lIgBJLUAMuuqQXAkVkYyGaG0_JhBn&ved=0ahUKEwiup6T38biSAxX_UGwGHW1nPJsQ4dUDCBc&uact=5&oq=flower&gs_lp=EgNpbWciBmZsb3dlckjbDFAAWIYKcAB4AJABAJgBAKABAKoBALgBA8gBAPgBAYoCC2d3cy13aXotaW1nmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcAgAgB&sclient=img&udm=2`
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="search(event)">
+        <input type="text" name="searchText" placeholder="Enter whatever you want to search..." />
+        <button>Search</button>
+    </form>
+</body>
+</html>
