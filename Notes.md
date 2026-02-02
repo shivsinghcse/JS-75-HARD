@@ -825,6 +825,31 @@ CDN
     gap-16
             
 
+# Day-29
+html - bad markup
+x-html - good markup
+    <img />
+    <br />
+    do not set global style layer
+
+to fix navbar use sticky
+list-style-type : list-none/disk/decimal    
+
+
+learn sanity with react+node
+
+lg: for desktop
+flex-row, flex-col, justify-around, items-center
+sticky, top-0, left-0
+z-index: z-10, z-0, z-20
+underline decoration- underline-offset- no-underline
+whitespace-nowrap
+grid grid-cols-5 gap-8 mx-auto
+scale-110
+duration-300 transition
+object-cover
+aspect-[4/3]
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
