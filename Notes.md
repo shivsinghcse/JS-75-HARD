@@ -866,6 +866,12 @@ checked for read checkbox value
 form-validation: 
     onblur: input se bahar click karne par
     placeholder-red-500
+
+# Day-31
+    <small></small> - for small tag
+    hidden for display hidden
+    nextElementSibling
+    oninput - just start typing
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
