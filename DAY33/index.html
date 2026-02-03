@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen bg-gray-300">
+    <h1 class="text-indigo-600 text-center lg:text-3xl text-2xl font-bold md:m-14 py-6 underline underline-offset-8">Local Storage App🚀</h1>
+    
+    <div class=" grid md:grid-cols-3 grid-col-1 md:gap-12 gap-8 md:py-12  md:px-16 px-6  py-14" >
+        
+        <div>
+            <form class=" shadow-lg bg-white py-8 px-8 rounded-md flex flex-col gap-6" onsubmit="setData(event)">
+                <h1 class="text-indigo-600 text-center text-3xl font-bold mb-4">Add Data</h1>
+                <input type="text" name="key" id="key" placeholder="Key" class="w-full border border-gray-300 rounded py-2 px-4" required>
+                <input type="text" name="value" placeholder="Value" class="w-full border border-gray-300 rounded py-2 px-4" required>
+                <button class="bg-indigo-600 py-2 w-fit px-8 rounded-md text-white font-semibold hover:cursor-pointer hover:bg-indigo-500">Add Data</button>
+            </form>
+        </div>
+
+
+        <div>
+            <form class=" shadow-lg bg-white py-10 px-8 rounded-md flex flex-col gap-6" onsubmit="getData(event)">
+                <h1 class="text-indigo-600 text-center text-3xl font-bold mb-4">Fetch Data</h1>
+                <input type="text" name="key" id="key" placeholder="Key" class="w-full border border-gray-300 rounded py-2 px-4" required>
+
+                <button class="bg-indigo-600 py-2 w-fit px-8 rounded-md text-white font-semibold hover:cursor-pointer hover:bg-indigo-500">Get Data</button>
+
+                <p id="result" class="text-zinc-700 py-1 px-4 rounded font-medium hidden"></p>
+            </form>
+        </div>
+
+
+        <div>
+            <div class=" shadow-lg bg-white py-10 px-8 rounded-md flex flex-col gap-6">
+                <h1 class="text-indigo-600 text-center text-3xl font-bold mb-4">Fetch All Data</h1>
+            
+
+                <button class="bg-indigo-600 py-2 w-fit px-8 rounded-md text-white font-semibold hover:cursor-pointer hover:bg-indigo-500" onclick="getAllData()">Get All Data</button>
+
+                <div id="all-data" class="flex flex-col gap-2 justify-center items-center"></div>
+            </div>
+        </div>
+
+        <div>
+            <form class=" shadow-lg bg-white py-10 px-8 rounded-md flex flex-col gap-6" onsubmit="deleteData(event)">
+                <h1 class="text-indigo-600 text-center text-3xl font-bold mb-4">Delete Data</h1>
+                <input type="text" name="key" id="key" placeholder="Key" class="w-full border border-gray-300 rounded py-2 px-4" required>
+
+                <button class="bg-indigo-600 py-2 w-fit px-8 rounded-md text-white font-semibold hover:cursor-pointer hover:bg-indigo-500">Delete Data</button>
+
+                <p id="delete-result" class="text-zinc-700 py-1 px-4 rounded font-medium hidden"></p>
+            </form>
+        </div>
+
+    
+        <div>
+            <div class="flex flex-col justify-center items-center gap-8 p-16 shadow-2xl bg-white rounded-md h-64">
+                <h1 class="text-indigo-600 text-center text-3xl font-bold mb-4">Clear Local Storage</h1>
+                <button class="bg-indigo-600 py-2 w-fit px-8 rounded-md text-white font-semibold hover:cursor-pointer hover:bg-indigo-500" onclick="clearData()">Clear Data</button>
+                <p id="clear-result" class=" bg-green-300 text-zinc-700 py-1 px-4 rounded font-medium hidden">All data deleted from Local Storage.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+</body>
+</html> 

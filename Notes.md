@@ -881,6 +881,290 @@ form-validation:
 ||
 
 # Day-33
+local storage: stored data domin wise
+it stays untill you do not delete
+password store nahi karte hai
+localstorage.setItem("key", "value") -> store (number, string, boolean) key can not be duplicate otherwise it will replace
+localstorage.getItem("key") -> read
+localstorage.removeItem("key") -> delete / returns nothing
+localstorage.clear() -> delete all data
+localstorage.length -> length
+localstorage.key(0) -> to get name of particular index
+const keys = Object.keys(localStorage); // return array of keys of localstorages
+
+store text data only
+
+
+alert() - takes only one argument
+form.reset() - to clear form
+sweetalert
+
+
+
+```md
+# 📦 JavaScript LocalStorage – Beginner to Advanced (Interview Ready)
+
+---
+
+## 🔹 What is LocalStorage?
+
+- `localStorage` is a **Web Storage API**
+- Used to store data **in the browser**
+- Data is stored **domain-wise**
+- Data **persists even after page reload or browser restart**
+- Data remains **until explicitly deleted**
+
+👉 Example:
+```
+
+example.com  → its own localStorage
+google.com   → separate localStorage
+
+````
+
+---
+
+## 🔹 Important Security Note ❌
+
+- ❌ **Never store passwords, tokens, or sensitive data**
+- ❌ localStorage is accessible via JavaScript
+- ❌ vulnerable to XSS attacks
+
+✅ Use:
+- Cookies (httpOnly)
+- Secure backend sessions
+
+---
+
+## 🔹 Data Type Rules
+
+- LocalStorage stores **TEXT ONLY**
+- Everything is stored as **string**
+
+| Original Value | Stored As |
+|---------------|----------|
+| `"Hello"` | `"Hello"` |
+| `123` | `"123"` |
+| `true` | `"true"` |
+| `{}` | `"[object Object]"` ❌ |
+
+👉 Use `JSON.stringify()` for objects & arrays
+
+---
+
+## 🔹 Storing Data
+
+### `localStorage.setItem(key, value)`
+
+```js
+localStorage.setItem("name", "Shiv");
+localStorage.setItem("age", 25);
+localStorage.setItem("isAdmin", true);
+````
+
+📌 Rules:
+
+* `key` must be **unique**
+* Duplicate key → **value gets replaced**
+* Returns **nothing**
+
+---
+
+## 🔹 Reading Data
+
+### `localStorage.getItem(key)`
+
+```js
+const name = localStorage.getItem("name");
+console.log(name); // "Shiv"
+```
+
+📌 If key does not exist:
+
+```js
+localStorage.getItem("abc"); // null
+```
+
+---
+
+## 🔹 Deleting Data
+
+### Delete a single key
+
+```js
+localStorage.removeItem("name");
+```
+
+* Removes the key-value pair
+* Returns **nothing**
+
+---
+
+### Delete all data
+
+```js
+localStorage.clear();
+```
+
+* Clears **entire localStorage** for that domain
+
+---
+
+## 🔹 LocalStorage Length
+
+```js
+localStorage.length;
+```
+
+* Returns total number of stored keys
+
+---
+
+## 🔹 Access Key by Index
+
+```js
+localStorage.key(0);
+```
+
+* Returns key name at given index
+* Order is browser-dependent (not guaranteed)
+
+---
+
+## 🔹 Get All Keys (Important)
+
+```js
+const keys = Object.keys(localStorage);
+console.log(keys);
+```
+
+* Returns array of all localStorage keys
+* Very useful for loops & dashboards
+
+---
+
+## 🔹 Loop Through LocalStorage
+
+```js
+for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    console.log(key, value);
+}
+```
+
+---
+
+## 🔹 Storing Objects & Arrays (Advanced)
+
+### ❌ Wrong
+
+```js
+localStorage.setItem("user", { name: "Shiv" });
+```
+
+### ✅ Correct
+
+```js
+const user = { name: "Shiv", role: "Admin" };
+
+localStorage.setItem("user", JSON.stringify(user));
+```
+
+### Reading Object
+
+```js
+const userData = JSON.parse(localStorage.getItem("user"));
+console.log(userData.name);
+```
+
+---
+
+## 🔹 Difference: LocalStorage vs SessionStorage
+
+| Feature           | localStorage | sessionStorage   |
+| ----------------- | ------------ | ---------------- |
+| Lifetime          | Permanent    | Until tab closes |
+| Scope             | Domain       | Tab only         |
+| Storage Limit     | ~5–10MB      | ~5MB             |
+| Accessible via JS | Yes          | Yes              |
+
+---
+
+## 🔹 alert() Function
+
+```js
+alert("Hello");
+```
+
+📌 Rules:
+
+* Takes **only ONE argument**
+* Blocks JS execution until user clicks OK
+
+---
+
+## 🔹 form.reset()
+
+```js
+form.reset();
+```
+
+* Clears all form fields
+* Resets to initial values
+* Commonly used after submit
+
+---
+
+## 🔹 Common Mistakes (Interview Favorite)
+
+❌ Storing passwords
+❌ Forgetting JSON.stringify
+❌ Assuming data auto-deletes
+❌ Expecting numbers instead of strings
+❌ Using localStorage inside server-side code
+
+---
+
+## 🔹 When to Use LocalStorage?
+
+✅ Theme preference (dark/light)
+✅ Language selection
+✅ User UI settings
+✅ Cart data (non-sensitive)
+
+❌ Authentication tokens
+❌ Passwords
+❌ Personal data
+
+---
+
+## 🔹 Interview One-Liners 🔥
+
+* LocalStorage stores **key-value pairs as strings**
+* Data persists **until manually cleared**
+* Stored **domain-wise**
+* Maximum size is **around 5–10MB**
+* Objects require **JSON.stringify / JSON.parse**
+
+---
+
+## 🔹 Mini Interview Question
+
+**Q:** What happens if key already exists?
+**A:** Value gets replaced.
+
+**Q:** What does `getItem()` return if key not found?
+**A:** `null`
+
+**Q:** Is localStorage synchronous or async?
+**A:** Synchronous
+
+---
+
+## ✅ Conclusion
+
+LocalStorage is simple, powerful, and widely used for **client-side persistence**, but should be used carefully with **security in mind**.
 
 
 
