@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />    
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen animate__animated animate__fadeIn">
+    <div id="page" class="bg-white lg:w-3/12 w-full h-screen lg:h-auto lg:rounded-xl shadow-lg flex flex-col items-center gap-6 py-10 lg:px-12 px-4  animate__animated animate__pulse">
+        <div class="flex flex-col items-center gap-4 w-full justify-center py-1">
+            <img src="./images/logo.svg" alt="company-logo" class="w-[80px] text-center"/>
+            <div class="flex flex-col items-center">
+                <h1 class="text-black text-xl font-medium tracking-normal">Welcome back</h1>
+                <p class="text-gray-600 text-[16px] tracking-tight font-xs">Sign in with your credentials below.</p>
+            </div>
+        </div>
+        <form class="flex flex-col gap-6 items-center w-full justify-center" onsubmit="signup(event)">
+            <input onblur="requiredValidation(this)" type="text" name="name" id="name" placeholder="Name*" class="border border-[#bbb] px-4 py-2.5 text-base w-full rounded-md focus:outline-[#564DE6]" required>
+            <input type="email" name="email" id="email" placeholder="E-mail*" class="border border-[#bbb] px-4 py-2.5 text-base w-full rounded-md focus:outline-[#564DE6]" required>
+            <input type="password" name="password" id="password" placeholder="Password*" class="border border-[#bbb] px-4 py-2.5 text-base w-full rounded-md focus:outline-[#564DE6]" required>
+            <input type="password" name="confirmPassword" id="confirm-password" placeholder="Password (Confirm)*" class="border border-[#bbb] px-4 py-2.5 text-base w-full rounded-md focus:outline-[#564DE6]" required>
+
+            <div class="flex justify-center items-center gap-3">
+                <input type="checkbox" name="terms" id="t&c" class="cursor-pointer w-4 h-4 hover:cursor-pointer accent-yellow-500 focus:ring-4 focus:outline-none  
+                focus:ring-yellow-100 disabled:opacity-50" required>
+                <label for="t&c" class="cursor-pointer text-base text-gray-700">I accept the terms and conditions.</label>
+            </div>
+
+            <button class="bg-[#564DE6] text-white w-full px-4 py-2.5 uppercase rounded-4xl cursor-pointer shadow-md">create account</button>
+
+            <div class="flex flex-col items-center">
+                <p class="text-gray-600">Already have an account?</p>
+                <a class="text-gray-600 underline underline-offset-4 decoration-gray-100" href="#">Sign in here</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script/signup.js"></script>
+</body>
+</html>

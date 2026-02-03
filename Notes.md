@@ -850,6 +850,22 @@ duration-300 transition
 object-cover
 aspect-[4/3]
 
+# Day-30
+bg-[url(./images/20.jpg)]
+apperance-none to hide checkbox
+underline underline-offset-4 decoration-gray-100
+uppercase
+accent-yellow-500 focus:ring-4 focus:outline-none  
+focus:ring-yellow-100 disabled:opacity-50
+focus:outline-[#564DE6]
+tracking-tight => letter-spacing
+
+const terms = form.terms.checked;
+checked for read checkbox value
+
+form-validation: 
+    onblur: input se bahar click karne par
+    placeholder-red-500
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
