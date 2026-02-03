@@ -872,6 +872,19 @@ form-validation:
     hidden for display hidden
     nextElementSibling
     oninput - just start typing
+
+    form live link : https://vex.visurel.com/register
+
+# Day-32
+!
+&&
+||
+
+# Day-33
+
+
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
