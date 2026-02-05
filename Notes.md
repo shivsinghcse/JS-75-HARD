@@ -1167,7 +1167,13 @@ form.reset();
 LocalStorage is simple, powerful, and widely used for **client-side persistence**, but should be used carefully with **security in mind**.
 
 
-
+const isMobile = window.innerWidth < 768;
+sweetalert
+Date.now()
+window.onload = () => {
+    fetchdata()
+}
+location.href = location.href
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
