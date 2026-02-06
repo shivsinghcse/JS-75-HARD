@@ -1175,6 +1175,34 @@ window.onload = () => {
 }
 location.href = location.href
 
+# 36
+JSON.parse()
+JSON.stringify()
+moment.js
+# 37
+# 38
+
+    sessionStorage.setItem(key, value)
+    sessionStorage.getItem(key)
+    sessionStorage.removeItem(key)
+    sessionStorage.clear()
+
+usecase of session and local storage
+showadd() example
+const test = () => {
+    const student = JSON.stringify({
+        name: "Ajeet",
+        roll: 12,
+        subject: "math"
+    })
+
+    console.log(student);
+    console.log(student.name); // undefined
+    console.log(student.roll);
+    console.log(student.subject);
+}
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
