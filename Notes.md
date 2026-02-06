@@ -1228,7 +1228,14 @@ const user = {
 }
 
 # Day-41
+form validation rules
+user-select: none ==> select-none
 
+in form if multiple btns keep type button expect one btn
+location.replace() : it removes previous history
+location.href : it keeps previous history
+
+ring, focus with-in tailwind
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
