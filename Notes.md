@@ -1202,6 +1202,19 @@ const test = () => {
     console.log(student.subject);
 }
 
+# Day-39
+JSON - JavaScript Object Notation is a type of datatype
+
+Applications in browser to store data
+    1. localStorage
+    2. sessionStorage
+    3. cookies
+    4. indexedDB
+    5. webSQL // depricated
+
+undraw fi=or illustrator    
+
+in form space-x-6 or space-y-6
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
