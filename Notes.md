@@ -1216,6 +1216,20 @@ undraw fi=or illustrator
 
 in form space-x-6 or space-y-6
 
+# Day-40
+onfocusout
+onblur
+nextElementSibling
+throw new Error()
+const user = {
+        fullname,
+        email,
+        password
+}
+
+# Day-41
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

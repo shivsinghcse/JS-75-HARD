@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <div class="min-h-screen bg-gray-200 py-32">
+        <div class="w-10/12 mx-auto flex gap-8">
+            <div class="w-[300px] p-12 bg-white rounded-xl relative">
+                <img 
+                    src="./images/avt.jpg" alt="profile picture"
+                    class="absolute rounded-full w-48 h-48 -top-20 left-14"
+                />
+                <div class="mt-18 space-y-1 text-center">
+
+                    <h1 class="text-2xl font-medium">Shiv Singh</h1>
+
+                    <p class=" text-slate-600">singhshiv0304@gmail.com</p>
+
+                    <button class="bg-amber-400 py-2.5 px-6 rounded-md text-white font-medium text-lg hover:cursor-pointer hover:bg-amber-500 mt-6">
+                        <i class="ri-logout-circle-r-line"></i>
+                        Logout
+                    </button>
+
+                </div>
+            </div>
+            <div class="w-[300px] p-12 bg-white rounded-xl flex-1"></div>
+        </div>
+        
+
+    </div>
+    
+    <script src="./js/signup.js"></script>
+</body>
+</html>
