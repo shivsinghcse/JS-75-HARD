@@ -1266,6 +1266,10 @@ how to get crop area : from canvas
     now generate url of this frame we use toDataURL('filetype/extension') it gives incoded string
     canvas.toDataURL('image/png')
 
+# Day-43
+css wave /css clip generated
+blob url is temporary    
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon
