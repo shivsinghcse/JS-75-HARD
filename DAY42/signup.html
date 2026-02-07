@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="h-screen grid lg:grid-cols-2 lg:w-10/12 mx-auto lg:gap-x-12 lg:content-center">
+        <img 
+            src="./images/signup.png" 
+            alt="signup image" 
+            class="w-full"
+        >
+        <div class="lg:py-24 pb-12 lg:px-20 px-8">
+            <h1 class="text-5xl font-semibold lg:text-left text-center">Register now</h1>
+
+            <form 
+                class="lg:mt-12 mt-10 lg:space-y-8 space-y-6"
+                onsubmit="createUser(event)"
+            >
+                <div class="flex flex-col lg:gap-3 gap-2">
+                    <label 
+                        for="fullname"
+                        class="text-lg font-medium text-slate-600"
+                    >
+                        Fullname
+                    </label>
+                    <input 
+                        type="text" 
+                        name="fullname" 
+                        id="fullname" placeholder="John Doe"
+                        class="border border-gray-300 py-2 px-4 rounded placeholder-gray-500 focus:outline-slate-400"
+                        onblur="validation(this)"
+                        oninput="validation(this)"
+                    />
+                    <label 
+                        id="fullname-error"
+                        class="text-rose-500 font-medium hidden"
+                    ></label>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <label 
+                        for="email"
+                        class="text-lg font-medium text-slate-600"
+                    >
+                        E-mail
+                    </label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" placeholder="doejohn@gmail.com"
+                        class="border border-gray-300 py-2 px-4 rounded placeholder-gray-500 focus:outline-slate-400"
+                        onblur="validation(this)"
+                        oninput="validation(this)"
+                    />
+                    <label 
+                        id="email-error"
+                        class="text-rose-500 font-medium hidden"
+                    ></label>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <label 
+                        for="password"
+                        class="text-lg font-medium text-slate-600"
+                    >
+                        Password
+                    </label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password" placeholder="********"
+                        class="border border-gray-300 py-2 px-4 rounded placeholder-gray-500 focus:outline-slate-400"
+                        onblur="validation(this)"
+                        oninput="validation(this)"
+                    />
+                    <label 
+                        id="password-error"
+                        class="text-rose-500 font-medium hidden"
+                    ></label>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <label 
+                        for="confirm-password"
+                        class="text-lg font-medium text-slate-600"
+                    >
+                        Confirm Password
+                    </label>
+                    <input 
+                        type="password" 
+                        name="confirm-password" 
+                        id="confirm-password" placeholder="********"
+                        class="border border-gray-300 py-2 px-4 rounded placeholder-gray-500 focus:outline-slate-400"
+                        onblur="validation(this)"
+                        oninput="validation(this)"
+                    />
+                    <label 
+                        id="confirm-password-error"
+                        class="text-rose-500 font-medium hidden"
+                    ></label>
+                </div>
+                <button class="bg-[#F50057] text-white py-2 px-6 font-medium text-lg rounded-md w-fit hover:cursor-pointer hover:bg-rose-500 focus:outline-slate-400">Sign up</button>
+            </form>
+
+            <div class="mt-6 space-x-2">
+                <label class="text-gray-500">Already have an account ?</label>
+                <a href="./login.html" class="text-green-500 font-medium hover:cursor-pointer text-green-600">Sign in</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/signup.js"></script>
+</body>
+</html>

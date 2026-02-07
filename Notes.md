@@ -1237,6 +1237,35 @@ location.href : it keeps previous history
 
 ring, focus with-in tailwind
 
+<button 
+                        class="relative bg-indigo-500 py-2.5 px-6 rounded-md text-white font-medium text-lg hover:cursor-pointer hover:bg-indigo-600 mt-6 w-full"
+                        onchange="uploadImage()"
+                    >
+                        <i class="ri-upload-line"></i>
+                        Upload Image
+                        <input type="file" 
+                        accept="image/*"
+                        name="imageUpload" id="imageUpload" class="h-full w-full absolute top-0 left-0 rounded-md opacity-0" />
+                    </button>
+
+accept="image/*"
+onchange for input:file       
+to get information about selected files we use file array             
+const file = chooseImageEle.files[0]
+after that we have to create url using URL.createObjectURL(file)
+it will give the url
+
+to crop the image we will use cropper.js library
+<link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.css" />
+    <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
+
+how to get crop area : from canvas
+        const canvas = isCropper.getCroppedCanvas()
+    console.log(canvas);
+
+    now generate url of this frame we use toDataURL('filetype/extension') it gives incoded string
+    canvas.toDataURL('image/png')
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

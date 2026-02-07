@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.css" />
+    <script src="https://unpkg.com/cropperjs@1.5.13/dist/cropper.min.js"></script>
+</head>
+<body>
+    
+    <div class="min-h-screen bg-gray-200 py-32 ">
+        <div class="w-10/12  mx-auto flex gap-8">
+            <div class="w-[15vw] p-12 bg-white rounded-xl relative">
+                <img 
+                    src="./images/avt.jpg" alt="profile picture"
+                    class="absolute rounded-full w-48 h-48 -top-20 left-14"
+                />
+                <div class="mt-18 space-y-1 text-center">
+
+                    <h1 class="text-2xl font-medium">Shiv Singh</h1>
+
+                    <p class=" text-slate-600">singhshiv0304@gmail.com</p>
+
+                    <button 
+                        class="relative bg-indigo-600 py-2.5 px-6 rounded-md text-white font-medium text-lg  hover:bg-indigo-500 mt-6 w-full "
+                        onchange="uploadImage()"
+                        
+                    >
+                        <i class="ri-upload-line"></i>
+                        Upload Image
+                        <input type="file" 
+                        accept="image/*"
+                        name="imageUpload" id="imageUpload" class="h-full w-full absolute top-0 left-0 rounded-md opacity-0 hover:cursor-pointer"/>
+                    </button>
+                    <button 
+                        class="relative bg-slate-600 py-2.5 px-6 rounded-md text-white font-medium text-lg hover:cursor-pointer hover:bg-slate-500 mt-6 w-full"
+                        onclick="loadCropper(this)"
+                        id="cropBtn"
+                    >
+                        <i class="ri-crop-line"></i>
+                        Crop Image
+                    </button>
+                    <button 
+                        class="bg-green-600 py-2.5 px-6 rounded-md text-white font-medium text-lg hover:cursor-pointer hover:bg-green-500 mt-6 w-full hidden"
+                        onclick="downloadImage()"
+                        id="downloadBtn"
+                    >
+                        <i class="ri-download-line"></i>
+                        Download
+                    </button>
+                    <button 
+                        class="bg-rose-600 py-2.5 px-6 rounded-md text-white font-medium text-lg hover:cursor-pointer hover:bg-rose-500 mt-6 w-full"
+                        onclick="logout()"
+                    >
+                        <i class="ri-logout-circle-r-line"></i>
+                        Logout
+                    </button>
+
+                </div>
+            </div>
+            <div class=" w-[55vw] h-[70vh] flex justify-center p-12 bg-white  rounded-xl">
+                <img src="./images/image-preview1.png" alt="image uploaded by user" class="w-full rounded object-contain border" id="imagePreview" >
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <script src="./js/profile.js"></script>
+</body>
+</html>
