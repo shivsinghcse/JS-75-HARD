@@ -1270,6 +1270,10 @@ how to get crop area : from canvas
 css wave /css clip generated
 blob url is temporary    
 
+# Day-44
+Filereader API - file code used to set file for permanent use - base64 string
+https://www.javascripttutorial.net/web-apis/javascript-filereader/
+do not use for large files
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

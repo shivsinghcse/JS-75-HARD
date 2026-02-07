@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video width="720" height="300" style="border:1px solid" id="videoPreview" controls></video>
+    <input type="file" id="selectVideo" accept="video/*" onchange="playVideo()">
+
+    <audio controls id="audio" accept="audio/*"></audio>
+    <input type="file" id="selectAudio" accept="audio/*" onchange="playAudio()">
+
+
+    <script>
+        const playVideo = () => {
+            const input = document.getElementById('selectVideo')
+            const video = document.getElementById('videoPreview')
+
+            const file = input.files[0]
+            const url = URL.createObjectURL(file)
+
+            video.src = url
+            video.play()
+        }
+
+        const playAudio = () => {
+            
+            const input = document.getElementById('selectAudio')
+            const audio = document.getElementById('audio')
+
+            const file = input.files[0]
+            const url = URL.createObjectURL(file)
+
+            audio.src = url
+            audio.play()
+        }
+    </script>
+</body>
+</html>
