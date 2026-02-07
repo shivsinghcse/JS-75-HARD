@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-300">
+    <div class="h-screen flex justify-center items-center">
+        <form 
+            class="w-96 py-12 px-8 bg-white flex flex-col gap-5 rounded shadow-lg"
+            onsubmit="login(event)"
+        >
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="Enter your email"
+                class="border border-gray-300 rounded py-1.5 px-3 focus:outline-gray-400"
+                required
+            />    
+
+            <input 
+                type="password" 
+                id="password" 
+                name="password"
+                placeholder="Enter your password"
+                class="border border-gray-300 rounded py-1.5 px-3 focus:outline-gray-400"
+                required
+            />    
+            <button class="bg-indigo-500 text-lg font-medium text-white py-2 rounded hover:cursor-pointer hover:bg-indigo-600">Login</button>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

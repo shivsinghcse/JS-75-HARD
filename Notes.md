@@ -1274,6 +1274,10 @@ blob url is temporary
 Filereader API - file code used to set file for permanent use - base64 string
 https://www.javascripttutorial.net/web-apis/javascript-filereader/
 do not use for large files
+
+# Day-45
+setTimeout()
+setInterval()
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

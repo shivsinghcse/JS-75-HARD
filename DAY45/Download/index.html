@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-300">
+    <div class="h-screen flex flex-col gap-4 justify-center items-center">
+        <button 
+            onclick="download()"
+            class="py-3 px-12 rounded bg-green-600 hover:bg-green-500 hover:cursor-pointer text-white font-medium text-lg"
+        >Download</button>
+        <h1 
+            id="message"
+            class="text-lg font-medium"
+        ></h1>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
