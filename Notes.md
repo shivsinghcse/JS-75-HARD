@@ -1278,6 +1278,14 @@ do not use for large files
 # Day-45
 setTimeout()
 setInterval()
+clearInterval()
+
+# Day-46
+group and group-hover in tailwaind
+active:scale-95 select-none
+
+
+
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

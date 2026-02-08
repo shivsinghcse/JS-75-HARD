@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideShow</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <div 
+        id="slide-container"
+        class="w-full lg:h-[480px] h-[180px] relative"
+    >
+        <img 
+            id="slide-image"
+            class="w-full h-full object-cover"
+        />    
+
+        <button 
+            id="left-btn"
+            onclick="previousImage()"
+            class="group select-none border border-l-0 border-gray-400 bg-transparent absolute left-0 top-1/2 -translate-y-1/2 rounded-r-md lg:py-6 lg:px-2.5 hover:cursor-pointer hover:border-white transition"
+            disabled
+        >
+            <i class="ri-arrow-left-wide-line lg:text-3xl text-gray-400 group-hover:text-white"></i>
+        </button>
+
+        <button 
+            id="right-btn"
+            onclick="nextImage()"
+            class="group active:scale-95 select-none border border-r-0 border-gray-400 bg-transparent absolute right-0 top-1/2 -translate-y-1/2 rounded-l-md lg:py-6 lg:px-2.5 hover:cursor-pointer hover:border-white transition"
+        >
+            <i class="ri-arrow-right-wide-line lg:text-3xl text-gray-400 group-hover:text-white"></i>
+        </button>
+        <div class=" w-fit py-0.5 lg:tracking-wide mx-auto px-2 absolute bottom-0 left-1/2 -translate-x-1/2 text-white lg:font-medium" id="image-count">
+            
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
