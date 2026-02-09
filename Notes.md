@@ -1284,7 +1284,7 @@ clearInterval()
 group and group-hover in tailwaind
 active:scale-95 select-none
 
-
+if you want to control width dynamically do not use tailwind for that
 
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body class="bg-gray-200">
+    <div 
+        id="accordion-container"
+        class="h-10 w-6/12 mx-auto my-20"
+        
+    >
+
+        <div class="space-y-1 mb-16">
+            <h1 class="text-3xl font-bold text-center">Frequently Asked Questions</h1>
+            <p class="text-base text-gray-800 text-center">Got questions? We have got answers to help you feel confident about joining.</p>
+        </div>
+
+        
+
+        <button 
+                class="accordion-header w-full flex items-center justify-between   py-2 px-6 bg-gray-300 hover:bg-gray-400 hover:cursor-pointer transition duration-300 text-2xl font-medium text-gray-800 mb-1 "
+                onclick="toggeAccordion(this)"
+        >CSS               
+            <i class="ri-arrow-down-s-line arrow-icon transition-transform duration-300"></i>
+ 
+        </button>
+        <div  
+                class="accordion-data px-6 overflow-hidden  bg-white opacity-0  rounded-b transition-all duration-300 mb-1"
+                style="max-height: 0;"
+        >
+            <p class="text-gray-500 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore doloribus sapiente accusantium, provident itaque nihil saepe sequi minus, vero nisi suscipit adipisci aut ratione dolorem assumenda id eveniet animi porro pariatur ex impedit enim rem. Esse sed veniam quibusdam temporibus!</p>
+        </div>
+
+        <button 
+                class="accordion-header w-full flex items-center justify-between   py-2 px-6 bg-gray-300 hover:bg-gray-400 hover:cursor-pointer transition duration-300 text-2xl font-medium text-gray-800 mb-1 "
+                onclick="toggeAccordion(this)"
+        >JavaScript               
+            <i class="ri-arrow-down-s-line arrow-icon transition-transform duration-300"></i>
+ 
+        </button>
+        <div  
+                class="accordion-data px-6 overflow-hidden  bg-white opacity-0  rounded-b transition-all duration-300 mb-1"
+                style="max-height: 0;"
+        >
+            <p class="text-gray-500 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore doloribus sapiente accusantium, provident itaque nihil saepe sequi minus, vero nisi suscipit adipisci aut ratione dolorem assumenda id eveniet animi porro pariatur ex impedit enim rem. Esse sed veniam quibusdam temporibus!</p>
+        </div>
+
+        <button 
+                class="accordion-header w-full flex items-center justify-between   py-2 px-6 bg-gray-300 hover:bg-gray-400 hover:cursor-pointer transition duration-300 text-2xl font-medium text-gray-800 mb-1 "
+                onclick="toggeAccordion(this)"
+        >React               
+            <i class="ri-arrow-down-s-line arrow-icon transition-transform duration-300 mb-1"></i>
+ 
+        </button>
+        <div  
+                class="accordion-data px-6 overflow-hidden  bg-white opacity-0  rounded-b transition-all duration-300"
+                style="max-height: 0;"
+        >
+            <p class="text-gray-500 py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore doloribus sapiente accusantium, provident itaque nihil saepe sequi minus, vero nisi suscipit adipisci aut ratione dolorem assumenda id eveniet animi porro pariatur ex impedit enim rem. Esse sed veniam quibusdam temporibus!</p>
+        </div>
+    </div>
+
+
+
+    <script src="./js/accordion.js"></script>
+</body>
+</html>
