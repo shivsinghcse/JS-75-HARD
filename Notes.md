@@ -1,13 +1,26 @@
 # Day-01
 
+## What is programming language?
+ - The language which have capability to take decision, is called programming language.
+
+## How to execute a programming language?
+- To convert High Level Language to Machine Code we need Translator.
+- Types of translator :
+    -   Interpretor
+    -   Compiler
+
 ## What is JavaScript?
 JavaScript (JS) is a programming language that makes web pages interactive. It can:
 - Change website content dynamically.
 - Respond to user actions like clicks and keyboard input.
 - Communicate with servers to fetch or send data.
+---
+- JavaScript is a high level programming language.
+- Javascript is client side programming language.
+- VB script is also a client side scripting language before Javascript.
+- We  need browser to execute client side language.
 
-> In simple words, HTML is the structure, CSS is the design, and JavaScript is the brain of a
-webpage
+> In simple words, HTML is the structure, CSS is the design, and JavaScript is the brain of a webpage
 
 
 ---
@@ -1286,6 +1299,10 @@ active:scale-95 select-none
 
 if you want to control width dynamically do not use tailwind for that
 
+sideBarEle.offsetWidth
+
+
+always use nav to create navbar
 # Day-52 : School management app (Setup)
 - Tailwind CSS cdn
 - Remix icon

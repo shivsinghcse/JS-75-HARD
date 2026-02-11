@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+</head>
+<body oncontextmenu="return false" class="select-none">
+    <nav class=" sticky top-0 left-0 bg-white shadow-lg flex items-center justify-between lg:px-16 pl-3">
+        <div class="flex items-center gap-2">
+            <img 
+                src="./images/logo.svg" 
+                alt="logo"
+                class="lg:w-[30px] w-[22px] object-fit"
+            >
+            <h1 class="text-2xl font-bold text-gray-800 select-none">CodeSpark</h1>
+        </div>
+        <div class="lg:flex hidden gap-4 items-center">
+            <div>
+                <a href="#" class="text-lg font-medium hover:bg-[dodgerblue] hover:text-white py-4 px-9 block transition duration-500">Home</a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-medium hover:bg-[dodgerblue] hover:text-white py-4 px-9 block transition duration-500">Courses</a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-medium hover:bg-[dodgerblue] hover:text-white py-4 px-9 block transition duration-500">About us</a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-medium hover:bg-[dodgerblue] hover:text-white py-4 px-9 block transition duration-500">Contact us</a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-medium bg-[dodgerblue] hover:bg-indigo-500 text-white py-2.5 px-9 rounded-md active:scale-95 block transition duration-500">Enroll now</a>
+            </div>
+        </div>
+        <button id="menubar-btn" class="lg:hidden block  p-4  bg-cyan-500">
+            <i class="ri-menu-line text-2xl text-white transition active:scale-95" onclick="openMenubar()"></i>
+        </button>     
+    </nav>
+
+
+    <aside id="aside" class="bg-cyan-500 h-screen fixed right-0 top-16.5 overflow-y-auto shadow-[-10px_0px_10px_rgba(0,0,0,0.1)]" style="transition: 0.3s; width: 0;">
+        <div class="flex flex-col gap-1 ">
+            <div>
+                <a href="#" class="text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-b-2 border-gray-200 space-x-1">
+                    <i class="ri-home-4-line"></i>
+                    <label>Home</label>
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-b-2 border-gray-200 space-x-1">
+                    <i class="ri-target-line"></i>
+                    <label>Courses</label>    
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-b-2 border-gray-200 space-x-1">
+                    <i class="ri-user-community-line"></i>
+                    <label>About us</label>    
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-b-2 border-gray-200 space-x-1">
+                    <i class="ri-contacts-line"></i>
+                    <label>Contact us</label>    
+                </a>
+            </div>
+
+            <div>
+                <a href="#" class="text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-b-2 border-gray-200">
+                    <i class="ri-stairs-line"></i>
+                    <label>Enroll now</label>    
+                </a>
+            </div>
+        </div>
+
+        <div class="fixed bottom-0 w-full text-lg font-semibold hover:bg-cyan-700 text-white py-4 px-9 block transition duration-300 border-t border-t-gray-200 space-x-1 select-none">
+            <i class="ri-settings-2-line"></i>
+            <label>Setting</label>
+        </div>
+    </aside>
+
+
+    <section id="section" class="py-8 px-4 lg:hidden block">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum exercitationem debitis corrupti asperiores animi adipisci consectetur a iusto. A laboriosam vel ullam velit animi architecto expedita et quis rem, dolore libero laborum consequatur, odit neque aliquid praesentium dicta, beatae minima similique aperiam quidem tempore ex! Qui saepe at illo praesentium itaque delectus exercitationem veniam fugiat harum reiciendis ipsa quasi natus totam, magnam in doloremque laboriosam cupiditate sit, eveniet asperiores voluptatum animi facere. Magnam voluptas, tenetur corrupti unde, necessitatibus neque illo nostrum aperiam nemo dolor, praesentium deleniti facilis laudantium distinctio aspernatur quaerat enim. Doloribus modi nulla incidunt expedita blanditiis, nobis mollitia itaque amet quaerat aperiam ullam, cupiditate similique quibusdam? Iste est quaerat voluptatem modi aperiam, debitis facilis, nam enim rem vero praesentium id eos commodi voluptate. Quis, laboriosam alias nesciunt dolore dolores aperiam tempore cum perferendis tempora hic ducimus sapiente explicabo repellendus mollitia inventore! Maxime, quia, aut, vero dolore consectetur accusamus enim reiciendis molestias fuga magni ipsa maiores excepturi placeat sunt quam hic eos tenetur velit quo? Consequuntur quidem placeat dignissimos, eligendi nulla aspernatur! Aliquid, quas? Quae expedita assumenda sequi deserunt et est molestias earum, minima dolores placeat delectus tempora, reprehenderit quasi! Odit minus accusamus hic. Dolore soluta explicabo labore modi quis nam ullam, autem similique voluptatum neque deserunt officia iste voluptas tempora nobis voluptates aut voluptatibus quo, officiis reprehenderit ratione atque natus nulla! Dolore consectetur cupiditate facere odio ad necessitatibus modi saepe sunt id quis iusto architecto dolorum assumenda ducimus cum sequi iste aliquam magni, nam consequuntur! Doloremque sit, fugiat quis obcaecati natus necessitatibus praesentium voluptas minima? Amet, perferendis rerum veritatis nulla velit, dolorem enim beatae assumenda reiciendis veniam id iusto animi ullam mollitia perspiciatis fuga, alias suscipit laborum accusamus laboriosam libero maiores non sapiente. Est quo voluptatem ducimus impedit quos corrupti! Sint explicabo sit labore voluptatibus corporis omnis necessitatibus quis, magni, beatae, ratione quisquam recusandae quasi fuga ut. Id dolore nemo odio dolor dicta alias magni inventore tempore optio at rem earum doloribus nisi omnis fugiat veniam quidem corrupti, quo unde, placeat sint et, voluptas voluptate. Porro enim aut eveniet ad aliquid maiores libero, doloremque ullam ratione nisi cumque eius provident eaque non officia fugiat earum ab quod nam! Dolor quasi facilis, nisi tenetur voluptates possimus vitae voluptatum adipisci consequuntur assumenda magni debitis odit pariatur. Debitis iusto quos ratione, vitae ab consequuntur architecto tempore tenetur veniam mollitia voluptatum voluptates officiis. Alias tenetur, dicta perferendis temporibus, inventore facilis quo dolorum illum magnam possimus impedit eveniet id blanditiis sequi amet iusto iste deleniti? Porro saepe nam cumque dolor id facere accusamus aliquam minus, adipisci commodi corporis quas autem veritatis molestiae voluptatum totam. Ab odit, nobis magnam quis praesentium repellat quae blanditiis accusantium quam, laborum fuga veritatis qui, facilis in! Odit recusandae eveniet quibusdam placeat, quasi repellat velit non obcaecati alias ut fuga aliquam eligendi praesentium perferendis, magni illo molestias tenetur maxime officiis. Praesentium quisquam sint tempore explicabo, voluptatum, quis rem sunt temporibus perspiciatis dicta minus alias. Dolor excepturi consequuntur magnam, natus nisi minus quis id temporibus aliquam expedita consectetur, dignissimos numquam?</p>
+    </section>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
