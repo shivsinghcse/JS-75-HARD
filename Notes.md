@@ -1304,9 +1304,19 @@ sideBarEle.offsetWidth
 
 always use nav to create navbar
 # Day-52 : School management app (Setup)
-- Tailwind CSS cdn
-- Remix icon
-- Animate.css
+- setup Tailwind CSS for css
+- setup Remix icon for icon
+- setup Animate.css for animation
+
+create js file separate for each page
+create a coomonjs file for common script code 
+first link common js file after that link any other js file
+
+
+
+TODO
+- [ ] - add toggle password in login and signup page
+
 
 Day-21 form adder student
 day-24 kids app
