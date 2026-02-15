@@ -1314,7 +1314,318 @@ first link common js file after that link any other js file
 for charts we use appex charts and chart.js
 
 
+# Day-61
 
+---
+
+# 🌐 HTTP / AJAX Request — Complete Notes
+
+## 1️⃣ What is an HTTP Request?
+
+An **HTTP request** is the way a frontend (browser/app) communicates with a backend server.
+
+👉 In modern web apps:
+
+* Frontend runs on one server (React, HTML, etc.)
+* Backend runs on another server (Node.js/Express)
+* They communicate through HTTP requests
+
+This communication from JavaScript without page reload is called:
+
+✅ **AJAX (Asynchronous JavaScript and XML)**
+Today it mostly uses JSON instead of XML.
+
+---
+
+## 2️⃣ Why AJAX is Needed
+
+Without AJAX:
+
+* Every action reloads the whole page
+
+With AJAX:
+
+* Data updates dynamically
+* Faster user experience
+* Background communication with server
+
+Example in your school project:
+👉 Signup form → send data → backend stores → response shown without reload
+
+---
+
+## 3️⃣ Ways to Make HTTP Requests in JavaScript
+
+### ✅ 1. fetch() API (Built-in)
+
+Native browser API. No installation needed.
+
+### ✅ 2. Axios (Third-party library)
+
+* Easier syntax
+* Better error handling
+* Automatic JSON conversion
+
+---
+
+## 4️⃣ REST API (Backend Design Style)
+
+REST = Representational State Transfer
+It defines **how backend endpoints should behave**.
+
+### 🔹 HTTP Methods
+
+| Method | Purpose             | Example         |
+| ------ | ------------------- | --------------- |
+| GET    | Fetch data          | Get students    |
+| POST   | Create new data     | Signup user     |
+| PUT    | Update full data    | Update profile  |
+| PATCH  | Update partial data | Change password |
+| DELETE | Remove data         | Delete account  |
+
+👉 Interview tip:
+PUT = full update
+PATCH = partial update
+
+---
+
+## 5️⃣ Base URL vs Endpoint
+
+### 🔹 Base URL
+
+The main server address.
+
+Example:
+
+```
+http://localhost:8080
+```
+
+### 🔹 Endpoint
+
+Specific route for an action.
+
+Examples:
+
+```
+/school/signup
+/school/login
+/products
+```
+
+### 🔹 Full API URL
+
+```
+baseURL + endpoint
+http://localhost:8080/school/signup
+```
+
+This is exactly what your controller error logs were pointing to.
+
+---
+
+## 6️⃣ Structure of a fetch Request
+
+### 🔹 Basic Syntax
+
+```js
+fetch(url, options)
+```
+
+### 🔹 Common Options
+
+| Property | Purpose                |
+| -------- | ---------------------- |
+| method   | HTTP method            |
+| headers  | Metadata about request |
+| body     | Data sent to server    |
+
+---
+
+## 7️⃣ Sending Data in POST Request
+
+Important rule:
+❗ fetch does NOT accept JavaScript objects directly
+✅ Convert object → JSON string
+
+### 🔹 Example (Your Signup Case)
+
+```js
+fetch("http://localhost:8080/school/signup", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+})
+.then((res) => res.json())
+.then((data) => console.log(data))
+.catch((err) => console.log(err.message))
+```
+
+---
+
+## 8️⃣ Understanding Each Part
+
+### headers
+
+Tell server what format data is in.
+
+```
+Content-Type: application/json
+```
+
+### body
+
+Actual data sent to backend.
+
+### res.json()
+
+* Converts server response → JavaScript object
+* Returns a Promise
+
+### catch()
+
+Handles:
+
+* Network errors
+* Server not reachable
+* Runtime errors
+
+👉 This is where many of your earlier bugs came from (like unexpected JSON errors).
+
+---
+
+## 9️⃣ Request–Response Lifecycle
+
+1️⃣ User submits form
+2️⃣ Frontend sends HTTP request
+3️⃣ Backend processes data
+4️⃣ Backend sends response
+5️⃣ Frontend updates UI
+
+---
+
+## 🔟 Common Errors (Interview + Practical)
+
+| Error | Cause                            |
+| ----- | -------------------------------- |
+| 400   | Bad request (wrong data)         |
+| 401   | Unauthorized                     |
+| 404   | Route not found                  |
+| 500   | Server error (your recent issue) |
+
+---
+
+# 🎯 Interview Questions (Beginner → Advanced)
+
+## 🟢 Beginner Level
+
+### 1. What is an HTTP request?
+
+Communication between client and server.
+
+### 2. What is AJAX?
+
+Sending requests without reloading the page.
+
+### 3. Difference between frontend and backend server?
+
+Frontend → UI
+Backend → logic + database
+
+### 4. What is fetch()?
+
+Built-in JavaScript API for HTTP requests.
+
+### 5. Why use JSON.stringify in fetch?
+
+Because request body must be string format.
+
+---
+
+## 🟡 Intermediate Level
+
+### 6. Difference between GET and POST?
+
+GET → retrieve data
+POST → send/store data
+
+### 7. What is REST API?
+
+Standard way to design backend routes using HTTP methods.
+
+### 8. What is base URL?
+
+Main server address.
+
+### 9. What is endpoint?
+
+Specific route for action.
+
+### 10. What does res.json() do?
+
+Converts response stream to JavaScript object.
+
+---
+
+## 🟠 Advanced Level (MERN Interviews)
+
+### 11. Difference between PUT and PATCH?
+
+PUT replaces full resource
+PATCH updates partial fields
+
+### 12. How does fetch handle errors?
+
+Only network errors go to catch
+HTTP errors must be handled manually.
+
+Example:
+
+```js
+if(!res.ok) throw new Error("Request failed")
+```
+
+### 13. What is CORS?
+
+Browser security policy blocking different-origin requests.
+
+### 14. Why headers are required?
+
+To tell server data type and authorization info.
+
+### 15. How does async communication improve performance?
+
+Non-blocking requests allow UI to remain responsive.
+
+---
+
+## 🔴 Real Interview Scenario Question
+
+👉 “Explain how frontend communicates with backend in MERN.”
+
+Perfect answer:
+
+* Frontend sends HTTP request using fetch/axios
+* Backend exposes REST endpoints
+* Data transferred in JSON
+* Server responds with status + data
+
+---
+
+# 💡 Bonus: Practical Tips (From Your Current Project)
+
+Since you're building a **school backend + dashboard**:
+
+✔ Always log incoming payload in controller
+✔ Validate JSON before parsing
+✔ Handle res.ok before res.json()
+✔ Use consistent baseURL constant
+✔ Test endpoint in browser/Postman first
+
+
+---    
 TODO
 - [ ] - add toggle password in login and signup page
 
