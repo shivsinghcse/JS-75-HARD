@@ -1311,6 +1311,7 @@ always use nav to create navbar
 create js file separate for each page
 create a coomonjs file for common script code 
 first link common js file after that link any other js file
+for charts we use appex charts and chart.js
 
 
 
