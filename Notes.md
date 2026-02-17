@@ -1651,10 +1651,12 @@ is also a way to get result of promise
 but it should be inside a function and function must async
 await keyword make code synchronous
 
-### Try Catch
+### Try Catch finally
 whn ever we use async await to handle promise, than to know about reject result or exception handeling we use try catch
 if result come from reject function catch will execute and try execute when result come from resolve
 
+
+> in .then .catch we get  error message from `err.response.data.messagerr` and in try catch we get from `err.message` and response from response.data.message
 -----
 TODO
 - [ ] - add toggle password in login and signup page
