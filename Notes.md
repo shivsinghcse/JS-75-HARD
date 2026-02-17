@@ -1626,6 +1626,36 @@ Since you're building a **school backend + dashboard**:
 
 
 ---    
+
+# DAY-62
+axios
+
+# DAY-03
+### Synchronous
+means running line by line, by default js is synchronous language
+### Asynchronous
+there are some web api in js which perform asynchronously which does not wait for result control goes to next statement and when result is ready async code will execute
+
+### Promise
+to make any code  asynchronous in js we use Promise, we always write Promise in function, create an instance of promise and return , it takes an callback function as an argument and this call back has two parameter called resolve and reject with the help of resolve it give result of success and for fail it uses reject 
+### Resolve
+resolve function gives the fullfilled result
+### Reject
+reject function gives rejected result
+
+### then catch
+is way to get result of promise
+
+### Async Await
+is also a way to get result of promise
+but it should be inside a function and function must async
+await keyword make code synchronous
+
+### Try Catch
+whn ever we use async await to handle promise, than to know about reject result or exception handeling we use try catch
+if result come from reject function catch will execute and try execute when result come from resolve
+
+-----
 TODO
 - [ ] - add toggle password in login and signup page
 
